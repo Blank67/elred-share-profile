@@ -9,7 +9,7 @@ const UserShareDetail = ({ show, handleClose, userData, metaData }) => {
     const handleShare = async () => {
         if (navigator.share) {
             console.log("SHARE START!");
-            const url = `${window.location.origin}/shareCard?userCode=${metaData.userCode}`;
+            const url = `${window.location.origin}/shareProfile?userCode=${metaData.userCode}`;
             await navigator.share({
                 title: metaData.cardTitle,
                 text: metaData.description,
