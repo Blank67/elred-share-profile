@@ -1,0 +1,31 @@
+.ratingContainer {
+    margin-top: 4rem;
+    background-color: var(--custom-card-bg);
+    padding: 2rem;
+    position: relative;
+    color: var(--custom-text-color);
+    .starImg {
+        position: absolute;
+        background-color: var(--custom-card-bg);
+        padding: 0.5rem;
+        top: -23px;
+        right: 47%;
+    }
+    .title {
+        color: var(--custom-text-color);
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .ratingList {
+        .ratingItem {
+            .count {
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .text {
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+    }
+}

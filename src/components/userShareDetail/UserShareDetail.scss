@@ -1,0 +1,46 @@
+.modal {
+    .modal-body {
+        padding: 0;
+        .userCardFull {
+            color: var(--custom-text-color);
+            --bs-card-bg: transparent;
+            background-image: url("../../assets/small-bg.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: none;
+            .card-header {
+                text-align: end;
+                border: 0;
+                font-size: 14px;
+            }
+            .card-body {
+                .userCardContainer {
+                    text-align: center;
+                    font-size: 16px;
+                    .profileImage {
+                        width: 25%;
+                    }
+                    .userName {
+                        font-size: 30px;
+                    }
+                    .designation {
+                        text-transform: capitalize;
+                        margin-top: 1rem;
+                    }
+                    .share-image {
+                        margin-top: 2rem;
+                        .group1 {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 2rem;
+                        }
+                        .group2 {
+                            margin-top: 4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

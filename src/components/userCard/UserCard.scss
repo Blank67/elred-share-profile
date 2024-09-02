@@ -1,0 +1,28 @@
+.userCard {
+    --bs-card-bg: transparent;
+    background-image: url("../../assets/small-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .card-body {
+        padding: 0;
+    }
+    .userCardContainer {
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 6px;
+        height: 100%;
+        .profileImage {
+            width: 40%;
+        }
+        .userName {
+            font-size: 8px;
+            font-weight: 700;
+        }
+        .share-image {
+            flex-grow: 1;
+        }
+    }
+}

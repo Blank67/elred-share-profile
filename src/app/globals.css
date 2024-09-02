@@ -1,0 +1,13 @@
+:root {
+    --custom-card-bg: rgba(255, 255, 255, 0.2);
+    --custom-text-color: rgba(255, 255, 255);
+}
+
+body {
+    background-image: url("../assets/website-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--custom-text-color);
+    padding-bottom: 2rem;
+}

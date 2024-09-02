@@ -1,0 +1,22 @@
+.commentsContainer {
+    background-color: var(--custom-card-bg);
+    margin-top: 4rem;
+    padding: 2rem;
+    color: var(--custom-text-color);
+    .heading {
+        h2 {
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+    .faded-text {
+        color: rgba(255, 255, 255, 0.4);
+    }
+    .timings {
+        span {
+            color: rgba(255, 255, 255, 0.4);
+            margin-left: 1rem;
+            font-size: 13px;
+        }
+    }
+}
