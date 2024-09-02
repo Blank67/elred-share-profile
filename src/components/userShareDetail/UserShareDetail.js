@@ -5,12 +5,24 @@ import group02 from "@/assets/group-02.png";
 import group03 from "@/assets/group-03.png";
 import "./UserShareDetail.scss";
 
-const UserShareDetail = ({ show, handleClose, userData }) => {
+const UserShareDetail = ({ show, handleClose, userData, metaData }) => {
+    const handleShare = async () => {
+        if (navigator.share) {
+            console.log("SHARE START!");
+            const url = `${window.location.origin}/shareCard?userCode=${metaData.userCode}`;
+            await navigator.share({
+                title: metaData.cardTitle,
+                text: metaData.description,
+                url,
+            });
+            console.log("SHARE END!");
+        }
+    };
     return (
         <Modal show={show} onHide={handleClose} keyboard={false} centered>
             <Modal.Body>
                 <Card className="userCardFull">
-                    <Card.Header>Share</Card.Header>
+                    <Card.Header onClick={handleShare}>Share</Card.Header>
                     <Card.Body>
                         <div
                             className="userCardContainer"

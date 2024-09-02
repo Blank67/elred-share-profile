@@ -14,6 +14,7 @@ export default function ShareProfile() {
     const [show, setShow] = useState(false);
     const [userData, setUserData] = useState(null);
     const [metaData, setMetaData] = useState({
+        userCode: "",
         cardImageURL: "",
         profileTitle: "",
         cardTitle: "",
@@ -57,6 +58,7 @@ export default function ShareProfile() {
                 show={show}
                 handleClose={toggleModal}
                 userData={userData}
+                metaData={metaData}
             />
         </>
     );
